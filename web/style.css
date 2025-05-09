@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --color-default: #cfd2da;
-  --color-hover: white;
+  --color-default: #ffffff;
+  --color-hover: #ffffff;
 }
 
 body {
@@ -24,66 +24,79 @@ p {
 
 #eye {
   position: absolute;
-  top: 50%;
+  font-size: 5;
+  top: 50.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 22pt;
-  fill: black;
+  fill: #5bb894;
+
 }
 
 .eye-hover {
-  fill: var(--color-default);
+  fill: #5bb894;
+}
+
+#hex::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  content: "\2B22";
+  color: rgba(0, 73, 45, 0.548);
+  font-size: 5.07vh;
+  text-shadow: #ffffff00 1px 0 10px;
+  -webkit-text-stroke: 1px #84ffd0
 }
 
 #options-wrapper {
   position: absolute;
   top: calc(48.4%);
-  left: calc(50% + 18pt);
+  left: calc(50% + 20pt);
 }
 
 .option-container {
   color: var(--color-default);
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: Flex start;
   align-items: center;
-  font-family: "Nunito";
   background: linear-gradient(
-    90deg,
-    rgba(20, 20, 20, 0.7) 0%,
-    rgba(20, 20, 20, 0.6) 66%,
-    rgba(47, 48, 53, 0) 100%
+    to bottom,
+    rgba(1, 48, 30, 0.479) 0%,
+    rgba(0, 73, 45, 0.384) 66%,
+    rgba(0, 61, 38, 0.438) 100%
   );
-  font-size: 11pt;
-  line-height: 22pt;
+  border-radius: 5px;
+  font-size: 15pt;
+  line-height: 50pt;
+  font-family: 'Nunito';
   vertical-align: middle;
-  margin: 2pt;
   transition: 300ms;
   transform-origin: left top;
   scale: 1;
-  height: 22pt;
-  width: 150pt;
-  top: 0;
+  height: 25pt;
+  width: 200pt;
+  margin: 5pt;
+  margin-top: 6;
 }
 
 .option-container:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(30, 30, 30, 0.7) 0%,
-    rgba(30, 30, 30, 0.6) 66%,
-    rgba(57, 58, 63, 0) 100%
-  );
+  background: #3a9471b7;
+  border-radius: 5px;
   transform-origin: left top;
-  color: var(--color-hover);
+  box-shadow: 0px 0px 15px 3px #84ffd0b4;
+  color: var(--color-default);
   margin-left: 4pt;
 }
 
 .option-icon {
-  font-size: 12pt;
+  font-size: 15pt;
   line-height: 22pt;
   width: 14pt;
-  margin: 5pt;
-  color: var(--color-default);
+  margin: 7pt;
+  padding-left: 3px;
+  padding-right: 3.5px;
+  color:  #84ffd0;
 }
 
 .option-label {
